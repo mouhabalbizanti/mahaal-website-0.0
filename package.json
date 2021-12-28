@@ -1,0 +1,40 @@
+{
+  "name": "chatbot-messenger-tech-shop",
+  "version": "1.0.0",
+  "description": "messenger chatbot tech shop nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+  "keywords": [
+    "messenger",
+    "facebook",
+    "bot",
+    "chatbot",
+    "tech",
+    "shop",
+    "nodejs"
+  ],
+  "author": "Hary Pham",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.5.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "google-spreadsheet": "^3.1.15",
+    "googleapis": "^39.2.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.14.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.7"
+  }
+}

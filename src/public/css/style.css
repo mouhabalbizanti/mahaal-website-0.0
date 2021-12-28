@@ -1,0 +1,46 @@
+/*stick footer to bottom */
+.row {
+    font-size:30px;
+    direction: rtl;
+    text-align: right;
+    }
+.btn-primary{
+   font-size: 30px;
+   position: relative;
+   right: 50%;
+   margin-bottom: 30px;
+  
+}
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(22deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+      display: fixed;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px 20px 0px 20px;
+}
+.fix-height {
+    flex: 1;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+}
+footer{
+position: relative;
+bottom: 0%;
+
+background-color: black;
+}
+.form-control{
+height: 50px;
+font-size: 35px;
+}
+.end, a{
+    color: #5DADE2;
+}

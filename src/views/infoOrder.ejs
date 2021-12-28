@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>استعلام عن طلبية</title>
+    <!-- Load Bootstrap 4, JQuery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Load custom Javascript and CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        let facebookAppId = "<%= facebookAppId %>"
+    </script>
+    <script src="/js/order.js"></script>
+    
+</head>
+<body>
+<div class="container fix-height">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center mt-3">
+                <span class="title">استعلام عن طلبية</span>
+            </div>
+            <input type="text" id="psid" hidden>
+            <div class="form-group">
+                <label for="customerName"  style="direction: rtl">إسم الزبون:</label>
+                <input type="text" id="customerName" class="form-control" placeholder="إسمك...">
+                <div class="invalid-feedback">نرجو إدخال الإسم.</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="phoneNum1">رقم الهاتف (<span style="color: red">*</span>):</label>
+                <input type="tel" id="phoneNum1" class="form-control" placeholder="رقم هاتفك...">
+                <div class="invalid-feedback">الرقم الذي أدخلته غير صحيح.</div>
+            </div>
+            <div class="form-group">
+                <label for="orderNumber">رقم الطلبية (<span style="color: red">*</span>):</label>
+                <input type="text" id="orderNumber" class="form-control" placeholder="رقم الطلبية...">
+                <div class="invalid-feedback">نرجو ادخال رقم الطلبية.</div>
+            </div>
+            <button class="btn btn-primary" id="btnFindOrder"> إدخال </button>
+        </div>
+
+    </div>
+
+</div>
+<footer>
+    <div class="text-center">
+        <div class="end">
+            <span class="mr-3">2021	&copy; قريب </span>
+            <span class="ml-3">
+                Powered by <a href="https://web.facebook.com/Qareebly" target="_blank">Developers</a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
